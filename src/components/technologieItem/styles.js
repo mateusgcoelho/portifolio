@@ -12,7 +12,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     
-    background: #ffff;
+    background: var(--techCard);
 
     text-align: center;
 

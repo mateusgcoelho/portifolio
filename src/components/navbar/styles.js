@@ -27,31 +27,30 @@ export const Navigation = styled.div`
     .user-info {
         display: flex;
         align-items: center;
+    }
 
-        > .ignite {
-            font-size: 1.8rem;
-        }
+    .ignite {
+        color: var(--white);
+        font-size: 1.4rem;
     }
 
     @media (max-width: 651px) {
         padding: .4rem 1rem;
 
-        .user-info {
-            > .ignite {
-                font-size: 1.2rem;
-            }
+        .ignite {
+            font-size: 1.2rem;
         }
     }
 
     @media (max-width: 560px) {
-        > .ignite {
+        .ignite {
             font-size: 1.8rem;
             text-align: center;
         }
     }
 
     @media (max-width: 500px) {
-        > .ignite {
+        .ignite {
             font-size: 1.6rem;
             text-align: center;
         }
@@ -69,7 +68,7 @@ export const Routes = styled.div`
 export const LinkRoute = styled.a`
     cursor: pointer;
 
-    color: #414143;
+    color: var(--whiteHover);
 
     font-size: 1rem;
 
@@ -78,7 +77,7 @@ export const LinkRoute = styled.a`
     }
 
     &:hover {
-        border-bottom: 1px solid #414143;
+        border-bottom: 1px solid var(--whiteHover);
     }
 `;
 
@@ -88,7 +87,7 @@ export const GithubLogo = styled.a`
     justify-content: center;
 
     padding: .6rem;
-    background: #3ab7c7;
+    background: var(--primary);
     border-radius: 0.4rem;
 
     img {

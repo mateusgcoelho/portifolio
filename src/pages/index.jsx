@@ -8,6 +8,11 @@ import Navbar from "../components/navbar";
 import Profile from "../components/profile";
 import TechnologieItem from "../components/technologieItem";
 import Footer from "../components/footer";
+import Chevron from "../components/chrevron";
+
+import ItemsCarousel from "react-items-carousel";
+
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 import {
   Container,
@@ -21,6 +26,8 @@ import {
 } from "../styles/pages/index.js";
 
 const App = () => {
+  const [activeItemIndex, setActiveItemIndex] = useState(0);
+  const chevronWidth = 40;
   const router = useRouter();
 
   const [technologies, setTechnologies] = useState([
@@ -94,14 +101,6 @@ const App = () => {
       <Container>
         <Content>
           <AboutWrapper>
-            {/* <Background>
-              <video autoPlay loop muted>
-                <source src={"./assets/backgroundVideo.mp4"} type="video/mp4" />
-              </video>
-
-              <img src="./assets/splash.png" alt="Splash Background" />
-            </Background> */}
-
             <AboutContent>
               <h1>
                 Não é a linguagem <br />
@@ -118,13 +117,13 @@ const App = () => {
               <h2>Bio</h2>
 
               <p>
-                &nbsp; Meu nome é João Mateus mas pode me chamar de Mateus,
-                tenho 17 anos. Minha historia começa quando eu era ainda uma
+                &nbsp; Meu nome é João Mateus, mas pode me chamar de Mateus,
+                tenho 17 anos. Minha história começa quando eu era ainda uma
                 criança, apaixonada por jogos e fascinada pelo simples fato de
                 um computador conseguir me proporcionar tudo aquilo de
-                divertimento e ao mesmo tempo ser tao complexo, e foi assim que
-                começou minha jornada na programação, tentando reproduzir tudo
-                aquilo que eu via em jogos, que na epoca meu favorito era
+                divertimento e, ao mesmo tempo, ser tao complexo, e foi assim
+                que começou minha jornada na programação, tentando reproduzir
+                tudo aquilo que eu via em jogos, que na época meu favorito era
                 Minecraft.
               </p>
             </ContentUserInfo>
@@ -136,9 +135,6 @@ const App = () => {
                 <li>
                   <b>2020 - 2021</b> GPlus Sistemas - [Estágiario Dev.
                   FullStack]
-                </li>
-                <li>
-                  <b>2022</b> Kabum! - [Dev. Junior FullStack]
                 </li>
               </ul>
             </ContentUserInfo>
@@ -168,28 +164,57 @@ const App = () => {
                   <b>Telefone</b> +55 19 98422-6276
                 </li>
               </ul>
-
-              <Button onClick={() => router.push("/works")}>
-                Ver Trabalhos
-              </Button>
             </ContentUserInfo>
           </UserInfo>
+          <Button
+            style={{ marginTop: "6rem", maxWidth: "600px", width: "100%" }}
+            onClick={() => router.push("/works")}
+          >
+            Ver Trabalhos
+          </Button>
         </Content>
 
         <Content
           style={{
             maxWidth: "100vw",
-            marginTop: "7rem",
+            marginTop: "6rem",
             padding: 10,
-            background: "#F2F3FA",
+            background: "var(--backgroundHover)",
           }}
         >
           <Technologies>
-            <h2>Algumas tecnologias:</h2>
+            <h2>Algumas tecnologias que estudo:</h2>
 
-            {technologies.map(({ name, photoUrl }) => (
-              <TechnologieItem key={name} name={name} photoUrl={photoUrl} />
-            ))}
+            <div style={{ maxWidth: "20rem", margin: "4rem auto" }}>
+              <ItemsCarousel
+                requestToChangeActive={setActiveItemIndex}
+                activeItemIndex={activeItemIndex}
+                numberOfCards={1}
+                gutter={12}
+                activePosition="center"
+                disableSwipe="false"
+                alwaysShowChevrons="false"
+                slidesToScroll={1}
+                showSlither={true}
+                firstAndLastGutter={true}
+                leftChevron={
+                  <Chevron>
+                    <FaChevronLeft />
+                  </Chevron>
+                }
+                rightChevron={
+                  <Chevron>
+                    <FaChevronRight />
+                  </Chevron>
+                }
+                outsideChevron
+                chevronWidth={chevronWidth}
+              >
+                {technologies.map(({ name, photoUrl }) => (
+                  <TechnologieItem key={name} name={name} photoUrl={photoUrl} />
+                ))}
+              </ItemsCarousel>
+            </div>
           </Technologies>
         </Content>
         <Footer />

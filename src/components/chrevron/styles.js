@@ -4,18 +4,15 @@ export const Container = styled.button`
     cursor: pointer;
 
     /* max-width: 200px; */
-    width: 100%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    padding: 1rem 2rem;
-
-    margin-top: 2rem;
-
-    border-radius: .2rem;
+    border-radius: 50%;
 
     background: none;
-    backdrop-filter: blur(10px);
 
     color: var(--primary);
-
-    font-size: 1rem;
 `;

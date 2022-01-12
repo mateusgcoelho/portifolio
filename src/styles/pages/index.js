@@ -72,31 +72,9 @@ export const Background = styled.div`
 export const UserInfo = styled.div``;
 
 export const Technologies = styled.div`
-    padding: 2rem 0;
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
-
-    /* overflow-x: hidden; */
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 4rem;
-
-    h2 {
-        border-bottom: 4px solid #202023;
-        line-height: 1.4;
-    }
-
-    @media (max-width: 651px) {
-        h2 {
-            text-align: center;
-            font-size: 1.2rem;
-        border-bottom: none;
-        }
-    }
+    padding: 2rem 4rem;
+    
+    text-align: center;
 `;
 
 export const ContentUserInfo = styled.div`
@@ -125,7 +103,7 @@ export const ContentUserInfo = styled.div`
     h2 {
         width: 24px;
 
-        border-bottom: 4px solid #202023;
+        border-bottom: 4px solid var(--white);
         margin-bottom: 1rem;
     }
 

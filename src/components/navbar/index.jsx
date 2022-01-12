@@ -7,8 +7,10 @@ const Navbar = () => {
     <Wrapper>
       <Navigation>
         <div className="user-info">
-          <Link className="ignite" href="/">
-            <a style={{ fontWeight: "bold" }}>MTCOELHO.DEV</a>
+          <Link href="/">
+            <a className="ignite" style={{ fontWeight: "bold" }}>
+              MTCOELHO.DEV
+            </a>
           </Link>
 
           <Routes>

@@ -1,6 +1,16 @@
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
+    :root {
+        --background: #202023;
+        --backgroundHover: #1a1a1c;
+        --techCard: #1d1d1f; 
+        --white: #f7f7f7;
+        --whiteHover: #d4d4d4;
+
+        --primary: #F560BC;
+    }
+
     * {
       padding: 0;
       margin: 0;
@@ -14,7 +24,15 @@ export default createGlobalStyle`
 
     a {
         text-decoration: none;
-        color: #202023;
+        color: var(--whiteHover);
+    }
+
+    p, li {
+        color: var(--whiteHover);
+    }
+
+    b {
+        color: var(--white);
     }
 
     :-moz-selection {
@@ -23,8 +41,8 @@ export default createGlobalStyle`
 
         min-height: 100%;
 
-        background: #ffff;
-        color: #202023;
+        background: var(--background);
+        color: var(--white);
 
         font-family: "Fira Code", Arial, Helvetica, sans-serif;
 
@@ -40,8 +58,8 @@ export default createGlobalStyle`
 
         min-height: 100%;
 
-        background: #ffff;
-        color: #202023;
+        background: var(--background);
+        color: var(--white);
 
         font-family: "Fira Code", Arial, Helvetica, sans-serif;
 
