@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.a`
     width: 100%;
+    min-height: 20rem;
 
     /* background: red; */
 
@@ -15,21 +16,20 @@ export const Container = styled.a`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 
     text-align: center;
 
     img {
-        width: 14rem;
-        height: 10rem;
-        margin-bottom: 1rem;
-
+        width: 220px;
+        height: 160px;
+        
         object-fit: cover;
-
+        
         border-radius: .2rem;
     }
-
+    
     .about {
+        margin-top: 1rem;
         max-width: 20rem;
 
         h2 {
