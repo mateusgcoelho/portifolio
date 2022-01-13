@@ -13,7 +13,7 @@ export const Content = styled.section`
 
     > h1 {
         width: 2rem;
-        border-bottom: 4px solid var(--white);
+        border-bottom: 4px solid var(--primary);
         line-height: 1.4;
     }
 `;

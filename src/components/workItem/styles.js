@@ -34,6 +34,7 @@ export const Container = styled.a`
 
         h2 {
             font-size: 1rem;
+            color: var(--white);
         }
 
         p {

@@ -7,6 +7,7 @@ export default createGlobalStyle`
         --techCard: #1d1d1f; 
         --white: #f7f7f7;
         --whiteHover: #d4d4d4;
+        --gray: #cccccc;
 
         --primary: #F560BC;
     }

@@ -103,7 +103,7 @@ export const ContentUserInfo = styled.div`
     h2 {
         width: 24px;
 
-        border-bottom: 4px solid var(--white);
+        border-bottom: 4px solid var(--primary);
         margin-bottom: 1rem;
     }
 

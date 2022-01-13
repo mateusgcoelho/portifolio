@@ -117,14 +117,13 @@ const App = () => {
               <h2>Bio</h2>
 
               <p>
-                &nbsp; Meu nome é João Mateus, mas pode me chamar de Mateus,
-                tenho 17 anos. Minha história começa quando eu era ainda uma
-                criança, apaixonada por jogos e fascinada pelo simples fato de
-                um computador conseguir me proporcionar tudo aquilo de
-                divertimento e, ao mesmo tempo, ser tao complexo, e foi assim
-                que começou minha jornada na programação, tentando reproduzir
-                tudo aquilo que eu via em jogos, que na época meu favorito era
-                Minecraft.
+                &nbsp; Meu nome é João Mateus, mas pode me chamar de Mateus.
+                Minha história começa quando eu era ainda uma criança,
+                apaixonada por jogos e fascinada pelo simples fato de um
+                computador conseguir me proporcionar tudo aquilo de divertimento
+                e, ao mesmo tempo, ser tao complexo, e foi assim que começou
+                minha jornada na programação, tentando reproduzir tudo aquilo
+                que eu via em jogos, que na época meu favorito era Minecraft.
               </p>
             </ContentUserInfo>
 
@@ -189,11 +188,9 @@ const App = () => {
               <ItemsCarousel
                 requestToChangeActive={setActiveItemIndex}
                 activeItemIndex={activeItemIndex}
-                numberOfCards={1}
-                gutter={12}
+                numberOfCards={2}
+                gutter={6}
                 activePosition="center"
-                disableSwipe="false"
-                alwaysShowChevrons="false"
                 slidesToScroll={1}
                 showSlither={true}
                 firstAndLastGutter={true}
