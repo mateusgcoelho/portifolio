@@ -1,97 +1,27 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.nav`
+export const Container = styled.nav`
     position: fixed;
-    right: 0;
     top: 0;
     left: 0;
-    
-    backdrop-filter: blur(10px);
+    right: 0;
+
+    height: 5rem;
+
+    backdrop-filter: saturate(180%) blur(5px);
+    -webkit-backdrop-filter: saturate(180%) blur(5px);
+
+    box-shadow: var(--header-border-bottom);
 
     display: flex;
     align-items: center;
-
-    z-index: 2;
 `;
 
-export const Navigation = styled.div`
+export const Content = styled.div`
     width: 100%;
-    max-width: 900px;
+    max-width: 1400px;
+
     margin: 0 auto;
-    padding: .4rem 2rem;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    .user-info {
-        display: flex;
-        align-items: center;
-    }
-
-    .ignite {
-        color: var(--white);
-        font-size: 1.4rem;
-    }
-
-    @media (max-width: 651px) {
-        padding: .4rem 1rem;
-
-        .ignite {
-            font-size: 1.2rem;
-        }
-    }
-
-    @media (max-width: 560px) {
-        .ignite {
-            font-size: 1.8rem;
-            text-align: center;
-        }
-    }
-
-    @media (max-width: 500px) {
-        .ignite {
-            font-size: 1.6rem;
-            text-align: center;
-        }
-    }
-`;
-
-export const Routes = styled.div`
-    margin-left: 2rem;
-
-    @media (max-width: 530px) {
-        display: none;
-    }
-`;
-
-export const LinkRoute = styled.a`
-    cursor: pointer;
-
-    color: var(--whiteHover);
-
-    font-size: 1rem;
-
-    & + a {
-        margin-left: 2rem;
-    }
-
-    &:hover {
-        border-bottom: 1px solid var(--whiteHover);
-    }
-`;
-
-export const GithubLogo = styled.a`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: .6rem;
-    background: var(--primary);
-    border-radius: 0.4rem;
-
-    img {
-        width: 1.6rem;
-        height: 1.6rem;
-    }
+    padding: 0 1rem;
 `;

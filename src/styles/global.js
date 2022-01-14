@@ -2,16 +2,12 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
     :root {
-        --background: #202023;
-        --backgroundHover: #1a1a1c;
-        --techCard: #1d1d1f; 
+        --background: #000000;
         --white: #f7f7f7;
-        --whiteHover: #d4d4d4;
-        --gray: #cccccc;
 
-        --primary: #F560BC;
+        --header-border-bottom: inset 0 -1px 0 0 hsla(0,0%,100%,0.1);
     }
-
+ 
     * {
       padding: 0;
       margin: 0;
@@ -25,15 +21,6 @@ export default createGlobalStyle`
 
     a {
         text-decoration: none;
-        color: var(--whiteHover);
-    }
-
-    p, li {
-        color: var(--whiteHover);
-    }
-
-    b {
-        color: var(--white);
     }
 
     :-moz-selection {
@@ -45,7 +32,7 @@ export default createGlobalStyle`
         background: var(--background);
         color: var(--white);
 
-        font-family: "Fira Code", Arial, Helvetica, sans-serif;
+        font-family: -apple-system,system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
         overflow-x: hidden;
         scroll-behavior: smooth;
@@ -62,7 +49,7 @@ export default createGlobalStyle`
         background: var(--background);
         color: var(--white);
 
-        font-family: "Fira Code", Arial, Helvetica, sans-serif;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
         overflow-x: hidden;
         scroll-behavior: smooth;
