@@ -5,7 +5,11 @@ export default createGlobalStyle`
         --background: #000000;
         --white: #f7f7f7;
 
+        --general-texts: #888;
+
         --header-border-bottom: inset 0 -1px 0 0 hsla(0,0%,100%,0.1);
+
+        --font: "Inter", -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
     }
  
     * {
@@ -32,8 +36,8 @@ export default createGlobalStyle`
         background: var(--background);
         color: var(--white);
 
-        font-family: -apple-system,system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-
+        font-family: var(--font);
+        
         overflow-x: hidden;
         scroll-behavior: smooth;
         
@@ -49,7 +53,7 @@ export default createGlobalStyle`
         background: var(--background);
         color: var(--white);
 
-        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-family: var(--font);
 
         overflow-x: hidden;
         scroll-behavior: smooth;
@@ -58,8 +62,7 @@ export default createGlobalStyle`
     }
 
     button {
+        cursor: pointer;
         border: 0;
-
-        font-weight: bold;
     }
 `;

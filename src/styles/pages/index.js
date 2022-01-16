@@ -18,18 +18,39 @@ export const Content = styled.section`
 `;
 
 export const Welcome = styled.section`
-    height: 20rem;
     width: 100%;
 
-    padding-top: 6rem;
+    padding: 4rem 0;
 
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+`;
+
+export const WelcomeTexts = styled.section`
+    text-align: center;
 
     h1 {
-        font-size: 3.8rem;
-        line-height: 3.8rem;
+        font-size: 3.5rem;
+        font-weight: 900;
+        line-height: 3.7rem;
+    }
 
-        text-align: center;
+    span {
+        font-weight: 900;
+        font-size: 3rem;
+    }
+`;
+
+export const WelcomeControllers = styled.section`
+    margin-top: 3.4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    button + button {
+        margin-top: 1.8rem;
     }
 `;

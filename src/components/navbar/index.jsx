@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <Container>
       <Content>
-        <h1>MTCOELHO.DEV</h1>
+        <h1>MTC.DEV</h1>
       </Content>
     </Container>
   );

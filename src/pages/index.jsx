@@ -1,8 +1,15 @@
 import Head from "next/head";
 
+import Button from "../components/button";
 import Navbar from "../components/navbar";
 
-import { Container, Content, Welcome } from "../styles/pages/index.js";
+import {
+  Container,
+  Content,
+  Welcome,
+  WelcomeTexts,
+  WelcomeControllers,
+} from "../styles/pages/index.js";
 
 const App = () => {
   return (
@@ -16,9 +23,15 @@ const App = () => {
       <Container>
         <Content>
           <Welcome>
-            <h1>
-              Developer <br /> is a artist.
-            </h1>
+            <WelcomeTexts>
+              <h1>Developer</h1>
+              <span>is a artist.</span>
+            </WelcomeTexts>
+
+            <WelcomeControllers>
+              <Button>Ver Trabalhos</Button>
+              <Button theme="dark">Sobre</Button>
+            </WelcomeControllers>
           </Welcome>
         </Content>
       </Container>
