@@ -9,6 +9,11 @@ import {
   Welcome,
   WelcomeTexts,
   WelcomeControllers,
+  AboutMe,
+  TechnologiesWrapper,
+  TechnologiesList,
+  UserProfile,
+  Divisor,
 } from "../styles/pages/index.js";
 
 const App = () => {
@@ -33,6 +38,22 @@ const App = () => {
               <Button theme="dark">Sobre</Button>
             </WelcomeControllers>
           </Welcome>
+
+          <AboutMe>
+            <UserProfile />
+
+            <p>
+              Vercel combines the best developer experience with an obsessive
+              focus on end-user performance. Our platform enables frontend teams
+              to do their best work.
+            </p>
+          </AboutMe>
+
+          <TechnologiesWrapper>
+            <span>WORKS WITH 30+ FRAMEWORKS</span>
+
+            <TechnologiesList></TechnologiesList>
+          </TechnologiesWrapper>
         </Content>
       </Container>
     </>

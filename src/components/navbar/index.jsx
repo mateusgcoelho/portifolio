@@ -4,7 +4,12 @@ const Navbar = () => {
   return (
     <Container>
       <Content>
-        <h1>MTC.DEV</h1>
+        <a href="#">MTC.DEV</a>
+
+        <div className="menu">
+          <div className="rect"></div>
+          <div className="rect"></div>
+        </div>
       </Content>
     </Container>
   );
